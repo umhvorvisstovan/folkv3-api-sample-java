@@ -1,0 +1,10 @@
+/.gradle/
+/.idea/
+/.springBeans/
+/**/bin/
+/**/build/
+/**/out/
+/**/.settings/
+.classpath
+.project
+*.launch

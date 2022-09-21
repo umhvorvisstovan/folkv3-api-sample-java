@@ -1,0 +1,23 @@
+plugins {
+	id 'application'
+}
+
+application {
+    mainClass.set('fo.us.folkv3.apisample.Sample')
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = 'fo.us.folkv3.apisample'
+version = '3.0.0'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+dependencies {
+	implementation 'fo.us.folkv3.api:folk-v3-api:3.0.0'
+}
