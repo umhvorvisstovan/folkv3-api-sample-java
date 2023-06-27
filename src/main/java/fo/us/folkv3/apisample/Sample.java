@@ -32,7 +32,7 @@ public class Sample {
 
 	public static void main(String[] args) {
 		var heldinConfig = HeldinConfig.secureHost("10.20.30.40")
-				.fo().test() // Use .fo() only for production
+				.fo().test() // Or .prod()
 				.com() // Or .gov()
 				.memberCode("123456")
 				.subSystemCode("my-system")
