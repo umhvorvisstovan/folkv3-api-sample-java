@@ -1,1 +1,8 @@
+plugins {
+    // Toolchains resolver using the Foojay Disco API for resolving Java runtimes
+    id("org.gradle.toolchains.foojay-resolver-convention") version('0.6.0')
+}
+
+rootProject.name = 'folk-v3-api-sample'
+
 includeBuild '../folk-v3-api'

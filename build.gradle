@@ -13,8 +13,12 @@ repositories {
 group = 'fo.us.folkv3.apisample'
 version = '3.0.0'
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+    sourceCompatibility = JavaVersion.VERSION_17
+}
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
 
